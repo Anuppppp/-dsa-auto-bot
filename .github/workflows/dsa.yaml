@@ -1,0 +1,32 @@
+name: DSA Automation
+
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - 'generated/**'
+      - 'README.md'
+      - 'progress.json'
+
+jobs:
+  run-bot:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - run: |
+          pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run DSA Bot
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python -m orchestrator.bot

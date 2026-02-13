@@ -56,8 +56,8 @@ class Bot:
             self.file_service.clear_input()
 
             # Step 7: Commit & push
-            commit_message = f"feat(dsa): day {next_day} {solution_data.title.lower()}"
-            self.git_service.commit_and_push(commit_message)
+            # commit_message = f"feat(dsa): day {next_day} {solution_data.title.lower()}"
+            # self.git_service.commit_and_push(commit_message)
 
             self.logger.info("DSA automation completed successfully.")
 
