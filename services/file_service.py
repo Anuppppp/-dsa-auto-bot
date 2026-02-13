@@ -30,7 +30,7 @@ class FileService:
         return filepath
     
     def update_readme(self, day:int, data:DSAResponse):
-        entry = f"| {day} | {data.title} | {data.topic} | {data.difficulty} | {data.time_complexity}"
+        entry = f"| {day} | {data.title} | {data.topic} | {data.difficulty} | {data.time_complexity}\n"
         if not os.path.exists(self.Config.README_FILE):
             with open(self.Config.README_FILE, "r+", encoding="utf-8") as f:
                 f.write("| Day | Title | Topic | Difficulty | Time Complexity |\n")
@@ -39,12 +39,20 @@ class FileService:
         with open(self.Config.README_FILE, "r+", encoding="utf-8") as f:
             content = f.readlines()
 
+            # Ensure header exists properly
+            if len(content) < 2:
+                content = [
+                    "| Day | Title | Topic | Difficulty | Time Complexity |\n",
+                    "|-----|-------|-------|------------|----------------|\n",
+                ]
+
             # Insert after header (latest-first)
             header_end_index = 2
             content.insert(header_end_index, entry)
 
             f.seek(0)
             f.writelines(content)
+            f.truncate()
 
         self.logger.info("README updated successfully.")
 

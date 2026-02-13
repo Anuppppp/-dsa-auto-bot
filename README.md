@@ -1,1 +1,3 @@
-| 4 | Add Two Numbers | Linked Lists | Medium | O(max(N, M)) where N and M are the lengths of the two input linked lists. We iterate through both lists once.| 5 | Longest Balanced Substring II | Hash Map, Prefix Sums, String | Medium | O(N)
+| Day | Title | Topic | Difficulty | Time Complexity |
+|-----|-------|-------|------------|----------------|
+| 8 | Longest Palindromic Substring | String Manipulation, Dynamic Programming, Two Pointers | Medium | O(N^2)

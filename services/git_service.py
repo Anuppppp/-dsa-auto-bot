@@ -29,12 +29,19 @@ class GitService:
         )
 
         return bool(result.stdout.strip())
-    
+
     def _run_git_command(self, command):
-        result = subprocess.run(command, capture_output=True, text=True)
+        self.logger.info(f"Running: {' '.join(command)}")
+
+        result = subprocess.run(
+            command,
+            capture_output=True,
+            text=True
+        )
+
         if result.returncode != 0:
-            self.logger.error(f"Git command failed: {' '.join(command)}")
-            self.logger.error(result.stderr)
+            self.logger.error(f"STDOUT: {result.stdout}")
+            self.logger.error(f"STDERR: {result.stderr}")
             raise RuntimeError("Git operation failed.")
 
 
