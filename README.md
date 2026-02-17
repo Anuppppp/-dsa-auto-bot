@@ -1,5 +1,6 @@
 | Day | Title | Topic | Difficulty | Time Complexity |
 |-----|-------|-------|------------|----------------|
+| 8 | Find the Duplicate Number | Arrays, Cycle Detection (Floyd's Tortoise and Hare) | Medium | O(N)
 | 7 | Minimum Depth of Binary Tree | Tree, Breadth-First Search (BFS) | Easy | O(N), where N is the number of nodes in the binary tree. In the worst case, we visit each node exactly once.
 | 6 | Best Time to Buy and Sell Stock | Arrays, Greedy | Easy | O(n)
 | 5 | Delete Node in a Singly-Linked List (Given Node Only) | Linked List | Medium | O(1)
