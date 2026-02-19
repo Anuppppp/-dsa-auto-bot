@@ -70,7 +70,7 @@ Problem:
                 if raw_text.startswith("```"):
                     raw_text = raw_text.split("```")[1].strip()
 
-                self.logger.info(f"Raw Gemini response:\n{raw_text}")
+                # self.logger.info(f"Raw Gemini response:\n{raw_text}")
 
                 parsed_json = json.loads(raw_text)
 
