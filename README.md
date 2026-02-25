@@ -1,5 +1,6 @@
 | Day | Title | Topic | Difficulty | Time Complexity |
 |-----|-------|-------|------------|----------------|
+| 12 | Invert Binary Tree | Tree, Recursion | Easy | O(N)
 | 11 | Sum of Root To Leaf Binary Numbers | Binary Tree, Depth-First Search, Bit Manipulation | Medium | O(N), where N is the number of nodes in the binary tree. Each node is visited exactly once during the Depth-First Search traversal.
 | 10 | Valid Palindrome | Strings | Easy | O(N), where N is the length of the input string. In the worst case, both pointers traverse the entire string once.
 | 9 | Middle of the Linked List | Linked List | Easy | O(N)
