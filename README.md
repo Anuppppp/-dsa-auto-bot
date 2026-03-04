@@ -1,5 +1,6 @@
 | Day | Title | Topic | Difficulty | Time Complexity |
 |-----|-------|-------|------------|----------------|
+| 15 | Valid Parentheses | Stack | Easy | O(n)
 | 14 | Invert Binary Tree | Tree, Recursion | Easy | O(N)
 | 13 | Merge Two Sorted Lists | Linked Lists | Easy | O(m + n)
 | 12 | Invert Binary Tree | Tree, Recursion | Easy | O(N)
