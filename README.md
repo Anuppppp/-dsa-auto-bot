@@ -1,5 +1,6 @@
 | Day | Title | Topic | Difficulty | Time Complexity |
 |-----|-------|-------|------------|----------------|
+| 16 | Remove Linked List Elements | Linked List | Easy | O(N), where N is the number of nodes in the linked list. We traverse the list once.
 | 15 | Valid Parentheses | Stack | Easy | O(n)
 | 14 | Invert Binary Tree | Tree, Recursion | Easy | O(N)
 | 13 | Merge Two Sorted Lists | Linked Lists | Easy | O(m + n)
