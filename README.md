@@ -1,5 +1,12 @@
 | Day | Title | Topic | Difficulty | Time Complexity |
 |-----|-------|-------|------------|----------------|
+| 17 | Subtree of Another Tree | Tree, Depth-First Search, Binary Tree | Easy | Let N be the number of nodes in the 'root' tree and M be the number of nodes in the 'subRoot' tree.
+
+The `is_subtree` function traverses each node in the 'root' tree. For each node, it potentially calls `is_same_tree`.
+
+The `is_same_tree` function, in the worst case, visits all M nodes of `subRoot`.
+
+Since `is_subtree` makes a call to `is_same_tree` for each of the N nodes in the `root` tree, the total time complexity is O(N * M).
 | 16 | Remove Linked List Elements | Linked List | Easy | O(N), where N is the number of nodes in the linked list. We traverse the list once.
 | 15 | Valid Parentheses | Stack | Easy | O(n)
 | 14 | Invert Binary Tree | Tree, Recursion | Easy | O(N)
