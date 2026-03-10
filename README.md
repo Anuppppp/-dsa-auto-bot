@@ -1,5 +1,6 @@
 | Day | Title | Topic | Difficulty | Time Complexity |
 |-----|-------|-------|------------|----------------|
+| 18 | Number of 1 Bits | Bit Manipulation | Easy | O(k), where k is the number of set bits in the input integer n. In the worst case, k can be log(n) (e.g., for n = 2^m - 1, all m bits are set). Therefore, the time complexity is O(log n).
 | 17 | Subtree of Another Tree | Tree, Depth-First Search, Binary Tree | Easy | Let N be the number of nodes in the 'root' tree and M be the number of nodes in the 'subRoot' tree.
 
 The `is_subtree` function traverses each node in the 'root' tree. For each node, it potentially calls `is_same_tree`.
