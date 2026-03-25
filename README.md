@@ -1,5 +1,6 @@
 | Day | Title | Topic | Difficulty | Time Complexity |
 |-----|-------|-------|------------|----------------|
+| 20 | Word Pattern | Hash Map | Easy | O(L + N), where L is the total length of the string 's' (due to splitting and iterating through words) and N is the length of the 'pattern'. In the worst case, L dominates N, so it can be simplified to O(L). Hash map operations (insertion, lookup) take O(1) on average.
 | 19 | Container With Most Water | Arrays, Two Pointers | Medium | O(n)
 | 18 | Number of 1 Bits | Bit Manipulation | Easy | O(k), where k is the number of set bits in the input integer n. In the worst case, k can be log(n) (e.g., for n = 2^m - 1, all m bits are set). Therefore, the time complexity is O(log n).
 | 17 | Subtree of Another Tree | Tree, Depth-First Search, Binary Tree | Easy | Let N be the number of nodes in the 'root' tree and M be the number of nodes in the 'subRoot' tree.
